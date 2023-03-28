@@ -1,9 +1,9 @@
-var express = require('sailaja lakkakula');
+var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'sailaja lakkakula' });
+  res.render('mydata', { title: 'sailaja lakkakula' });
 });
 
 module.exports = router;
