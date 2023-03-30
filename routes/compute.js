@@ -14,8 +14,11 @@ if(req.query.x ==undefined ) {
 let y1=Math.pow(x,y);
 let y2=Math.sign(y);
 let y3=Math.tanh(x);
-//let y4=Math.trunc(x,y);
-  res.send('Math.pow() applied to '+x+' and '+y+' is ' +y1+"<br>" +'Math.sign() applied to '+y+' is '+y2+"<br>"+'Math.tanh()  applied to '+x+' is'+y3); 
+let y4=Math.trunc(x);
+  res.send('Math.pow() applied to '+x+' and '+y+' is ' +y1+"<br>" 
+  +'Math.sign() applied to '+y+' is '+y2+"<br>"
+  +'Math.tanh()  applied to '+x+' is'+y3+"<br>"
+  +'Math.trunc() applied to '+x+' is'+y4); 
 
 }
 else{
@@ -24,8 +27,11 @@ else{
   let y1=Math.pow()(x,x);
   let y2=Math.sign(x);
   let y3=Math.tanh(x);
-  //let y4=Math.trunc(x,y);
-  res.send('Math.pow() applied to '+x+' and '+y+' is ' +y1+"<br>" +'Math.sign() applied to '+y+' is '+y2+"<br>"+'Math.tanh()  applied to '+x+' is'+y3);
+  let y4=Math.trunc(y);
+  res.send('Math.pow() applied to '+x+' and '+y+' is ' +y1+"<br>" 
+  +'Math.sign() applied to '+y+' is '+y2+"<br>"
+  +'Math.tanh()  applied to '+x+' is'+y3+"<br>"
+  +'Math.trunc() applied to '+y+' is'+y4);
 }
 });
 
